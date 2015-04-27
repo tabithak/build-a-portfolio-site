@@ -1,0 +1,89 @@
+/* Font face */
+@font-face {
+    font-family: 'aaarghnormal';
+    src: url('fonts/aaargh-webfont.eot');
+    src: url('fonts/aaargh-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/aaargh-webfont.woff2') format('woff2'),
+         url('fonts/aaargh-webfont.woff') format('woff'),
+         url('fonts/aaargh-webfont.ttf') format('truetype'),
+         url('fonts/aaargh-webfont.svg#aaarghnormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Primary styles */
+body {
+	color: #0DDC00;
+	font-size: 13px;
+	font-family: aaarghnormal, sans-serif;
+	background: #535353 url(../img/bg-repeat.png) repeat 0 0;
+}
+a {
+	color: #00DBCA;
+}
+a:hover {
+	color: #79FFF4;
+}
+.row {
+	margin-bottom: 10px;
+}
+hr {
+	border-top: 3px solid #2D6226;
+}
+h2 {
+	padding-left: 20px;
+	font-size: 3.2em;
+	font-weight: normal;
+}
+
+/* Header */
+.logo, .headline {
+	padding-top: 30px; /* this is on col instead of row for responsive purposes */
+}
+.headline {
+	padding-top: 70px; /* needs more spacing than helmet */
+}
+
+/* Hero area */
+.hero-col {
+	/*margin-bottom: 15px;*/
+}
+
+/* Featured work */
+a.featured-work-wrap, a.featured-work-wrap span {
+	display: inline-block;
+	text-align: center;
+}
+span.work-title {
+	padding-top: 15px;
+	font-size: 3.2em;
+}
+span.work-link {
+	font-size: 1.2em;
+}
+
+/* Responsive queries */
+@media screen and (max-width: 992px) {
+	/* Header */
+	.logo, .headline {
+		text-align: center;
+	}
+	.headline {
+		padding-top: 0;
+	}
+
+	/* Featured work */
+	h2 {
+		margin-top: 30px;
+	}
+	a.featured-work-wrap, h2 {
+		width: 100%;
+		text-align: center;
+	}
+	a.featured-work-wrap {
+		margin-bottom: 30px;
+	}
+	a.featured-work-wrap img {
+		display: inline-block; /* allows it to be centered */
+	}
+}
